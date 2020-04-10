@@ -1,0 +1,263 @@
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    background-color: #ffffff;
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+}
+
+.container {
+    width: 1140px;
+}
+
+.clear {
+    clear:both;
+}
+
+.header {
+    padding: 10px;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+}
+
+.menu {
+    width: 70%;
+    float: left;
+    overflow: hidden;
+}
+
+.menu a {
+    float:left;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #afafaf;
+    margin-top: 25px;
+  	border-radius: 5px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color :#fff;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    margin-top: 25px!important;
+    border-radius: 5px;
+    background-color: #afafaf;
+}
+
+.menu a:hover, .dropdown:hover .dropbtn {
+    background-color: #2bccc4;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.animal_table {
+  	float:none;
+  	width: 100%;
+  	border: 0px;
+}
+
+.animal_title {
+  	width: 50%;
+  	height: 35px;
+  	border-color: #404040;
+  	border-radius: 2px; 
+  	background-color: #fff;
+}
+
+.animal_text {
+  	text-align: center;
+  	vertical-align: middle;
+  	background-color: rgba(255, 255, 255, 1);
+}
+
+.bottom_table_text {
+  	text-align: center;
+  	vertical-align: middle;
+  	background-color: rgba(255, 255, 255, 0);
+}
+
+/*slider*/
+
+.slider {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+  }
+  
+  .slider-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .slider-open:checked + .slider-item {
+    position: static;
+    opacity: 100;
+  }
+  
+  .slider-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+  }
+  
+  .slider-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .slider-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+  }
+  
+  .slider-control.prev {
+    left: 2%;
+  }
+  
+  .slider-control.next {
+    right: 2%;
+  }
+  
+  .slider-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+  }
+  
+  #slider-1:checked ~ .control-1,
+  #slider-2:checked ~ .control-2,
+  #slider-3:checked ~ .control-3,
+  #slider-4:checked ~ .control-4 {
+    display: block;
+  }
+  
+  .slider-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .slider-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .slider-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+  }
+  
+  .slider-bullet:hover {
+    color: #aaaaaa;
+  }
+  
+  #slider-1:checked
+    ~ .control-1
+    ~ .slider-indicators
+    li:nth-child(1)
+    .slider-bullet,
+  #slider-2:checked
+    ~ .control-2
+    ~ .slider-indicators
+    li:nth-child(2)
+    .slider-bullet,
+  #slider-3:checked
+    ~ .control-3
+    ~ .slider-indicators
+    li:nth-child(3)
+    .slider-bullet,
+  #slider-4:checked
+    ~ .control-4
+    ~ .slider-indicators
+    li:nth-child(4)
+    .slider-bullet {
+    color: #428bca;
+  }
+  
+  #title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Open Sans", sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+      -1px 0px 2px rgba(255, 255, 255, 0);
+  }
+  
